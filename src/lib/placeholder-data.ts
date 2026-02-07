@@ -17,63 +17,91 @@ const adminUser = {
 export const posts: Post[] = [
   {
     id: '1',
-    title: 'Why did the chicken cross the road?',
-    content: 'To get to the other side, of course! But in my neighborhood, the chicken crossed the road to complain about the Wi-Fi signal. It\'s a tech-savvy chicken. It even has a blog. It\'s called "The Daily Cluck".\n\nI tried to follow it, but it\'s all in chicken scratch. I asked the chicken why its blog posts were so hard to read. It told me, "I\'m just pecking away at the keyboard!" Some chickens have all the fun. My pet rock just sits there. I asked it to start a blog, but it said it was too stoned.',
+    title: 'Zašto je kokoška prešla ulicu?',
+    content: 'Da bi stigla na drugu stranu, naravno! Ali u mom komšiluku, kokoška je prešla ulicu da se žali na WiFi signal. Kokoška je tehnološki napredna. Ima čak i blog koji se zove "Dnevno Kokodakanje".\n\nPokušao sam da ga pratim, ali je sve na kokošijem pismu. Pitao sam kokošku zašto su joj blog postovi teško čitljivi. Rekla mi je: "Samo kljucam po tastaturi!" Neke kokoške imaju svu zabavu.',
     author: adminUser,
     createdAt: '2024-05-20T10:00:00Z',
     featured: true,
     likes: 152,
+    category: 'humor',
     ...findImage('post1')
   },
   {
     id: '2',
-    title: 'My Smart Fridge is Too Smart',
-    content: 'I bought a smart fridge. It connects to the internet, tells me when I\'m out of milk, and even suggests recipes. Last night, it locked me out. A message on the screen said, "Your lifestyle choices are not aligned with our recommended dietary guidelines."\n\nI had to negotiate with my fridge for a slice of leftover pizza. It demanded I eat a salad first. I\'m pretty sure it\'s judging me. This morning, I found it had ordered 10kg of kale. I don\'t even like kale! I think my toaster is in on it too. It keeps burning my bagels. It\'s a conspiracy.',
+    title: 'Da li znate koliko je staro najstarije drvo na svetu?',
+    content: 'Najstarije živo drvo na planeti je bela čempres u Kaliforniji stara preko 5.000 godina! Drvo po imenu Metuzalem bilo je seme još u vreme kad su egipatske piramide bile nove građevine.\n\nOvo drvo je preživelo hiljade generacija, klimatske promene, požare i suše. Njegova tačna lokacija se drži u tajnosti kako bi bilo zaštićeno. Neverovatno je zamisliti sve što je ovo drvo "videlo" tokom svoje duge istorije.',
     author: adminUser,
     createdAt: '2024-05-19T14:30:00Z',
     featured: false,
     likes: 98,
+    category: 'zanimljivosti',
     ...findImage('post2')
   },
   {
     id: '3',
-    title: 'The Horrors of Assembling IKEA Furniture',
-    content: 'Assembling IKEA furniture is a journey. A journey into madness. It starts with a flat box full of hope and ends with a lopsided bookshelf and a pile of "extra" screws. The instruction manual is a comic book without words, drawn by someone who clearly hates humanity.\n\nI spent six hours trying to build a simple chair. It now has three legs and leans to the left. I call it "The Leaning Tower of Pisa Chair". It\'s a conversation starter. The conversation is usually, "What is THAT?" I think I\'ll just use the box as a chair instead. It\'s already assembled.',
+    title: 'Predlog: Biciklistička staza kroz centar grada',
+    content: 'Zašto ne bismo pretvorili jedan deo glavne ulice u biciklističku stazu? Vidim sve više ljudi koji bi hteli da voze bicikl na posao, ali se plaše saobraćaja.\n\nSa dedikovanom biciklističkom stazom smanjili bismo zagađenje, gužve i učinili grad zelenijim i zdravijim mestom za život. Možda početi sa pilot projektom od 2-3 kilometra? Šta mislite? Da li bi vi koristili bicikl češće da postoje bezbedne staze?',
     author: adminUser,
     createdAt: '2024-05-18T09:00:00Z',
     featured: true,
     likes: 230,
+    category: 'ideje',
     ...findImage('post3')
   },
   {
     id: '4',
-    title: 'My Cat Thinks He\'s a Dog',
-    content: 'My cat, Whiskers, is having an identity crisis. He fetches, he wags his tail (which is weird), and he tries to bark. It comes out as a sort of aggressive meow. The neighborhood dogs are very confused.\n\nYesterday, he brought me the newspaper. It was shredded, but it\'s the thought that counts. I\'m thinking of getting him a leash and taking him to the dog park. What\'s the worst that could happen? A turf war between the chihuahuas and a very confident cat? I\'d pay to see that.',
+    title: 'Kako možemo pomoći starijim komšijama?',
+    content: 'Primetio sam da mnogi stariji ljudi u našem naselju retko izlaze napolje. Zamišljam sistem "dobri komšija" gde bi mlađi mogli da pomognu sa kupovinom, šetnjom ili jednostavno druženju.\n\nNije potrebna velika organizacija - samo dobrovoljna baza ljudi koji bi mogli da odvojite sat vremena nedeljno. Možda bi lokalna zajednica mogla da koordinira? Sitne stvari znače mnogo. Ko bi bio zainteresovan da učestvuje?',
     author: adminUser,
     createdAt: '2024-05-17T18:00:00Z',
     featured: false,
     likes: 112,
+    category: 'zajednica',
     ...findImage('post4')
   },
    {
     id: '5',
-    title: 'The Futility of New Year\'s Resolutions',
-    content: 'My New Year\'s resolution was to be more organized. I bought a planner, 17 colored pens, and a label maker. My first entry was: "1. Make a plan to get organized." I then spent the next three hours color-coding my plan to make a plan. By February, the planner was gathering dust under a pile of things I was supposed to organize.\n\nMy new resolution is to have no resolutions. That way, I can\'t fail. It\'s foolproof. I\'ve already succeeded for 5 months. I deserve a medal. Or at least a nap.',
+    title: 'Moj pametni frižider je previše pametan',
+    content: 'Kupio sam pametni frižider. Konektuje se na internet, obaveštava me kad nestane mleko, pa čak i predlaže recepte. Sinoć me je zaključao napolju. Poruka na ekranu je glasila: "Vaš izbor životnog stila nije u skladu sa našim preporučenim dijetetskim smernicama."\n\nMorao sam da pregovaram sa frižiderom za parče pice. Zahtevao je da prvo pojedem salatu. Prilično sam siguran da me sudi. Jutros sam otkrio da je naručio 10kg kelja. Ne volim ni kelj!',
     author: adminUser,
     createdAt: '2024-05-16T11:45:00Z',
     featured: false,
     likes: 77,
+    category: 'humor',
     ...findImage('post5')
   },
   {
     id: '6',
-    title: 'I Tried to Be a Vegan for a Week',
-    content: 'For health reasons, I decided to try veganism. The first day was easy. I had an apple. For lunch, a salad. By dinner, I was hallucinating. I swear a block of cheese was singing to me from the fridge. It had the voice of an angel.\n\nDay three, I was caught gnawing on a leather belt. It wasn\'t even a good one. My friend, a long-time vegan, told me "You get used to it." I don\'t want to get used to it! I want to live in a world where cheese doesn\'t serenade me with its siren song. I broke on day four with a bacon cheeseburger. It was glorious. I have no regrets.',
+    title: 'Činjenica dana: Oktopodi imaju tri srca',
+    content: 'Znali ste da oktopodi imaju tri srca? Dva srca pumpaju krv kroz škrge, dok treće pumpa krv kroz ostatak tela. I još nešto fascinantno - njihova krv je plava!\n\nTo je zato što koriste bakar-zasnovani protein hemocijanin za prenos kiseonika, umesto gvožđe-zasnovanog hemoglobina kao ljudi. Takođe imaju devet mozgova - centralni i po jedan u svakom kraku. Neverovatna stvorenja!',
     author: adminUser,
     createdAt: '2024-05-15T20:00:00Z',
     featured: false,
     likes: 199,
+    category: 'zanimljivosti',
     ...findImage('post6')
+  },
+  {
+    id: '7',
+    title: 'Predlog: Zeleni krov na gradskoj zgradi',
+    content: 'Prolazio sam pored stare gradske zgrade i pomislio - zašto ne bismo napravili zeleni krov? Zelenilo na krovu može smanjiti temperaturu zgrade za 5-7 stepeni leti, apsorbovaće kišnicu i pružiti stanište za ptice i insekte.\n\nUz to, izgledalo bi neverovatno! Videh primere ovoga u Kopenhagenu i bio sam oduševljen. Gradska zgrada bi mogla biti primer ekološke svesti. Moglo bi se čak organizovati vrtlarstvo zajednice na krovu. Šta mislite?',
+    author: adminUser,
+    createdAt: '2024-05-14T16:20:00Z',
+    featured: false,
+    likes: 156,
+    category: 'ideje',
+    ...findImage('post1')
+  },
+  {
+    id: '8',
+    title: 'Inicijativa: Besplatne časovi jezika za migrante',
+    content: 'Naša zajednica ima sve više novih stanovnika koji dolaze iz drugih zemalja. Mnogi bi želeli da nauče jezik ali nemaju sredstava za časove. Šta ako organizujemo besplatne časove jezika jednom nedeljno?\n\nImam par prijatelja profesora koji bi volontirali. Trebala bi nam samo prostorija - možda biblioteka ili domovi kulture? Ovo bi pomoglo integraciji i stvorilo jača društvena povezivanja. Ko bi želeo da učestvuje kao učitelj ili učenik?',
+    author: adminUser,
+    createdAt: '2024-05-13T19:00:00Z',
+    featured: true,
+    likes: 189,
+    category: 'zajednica',
+    ...findImage('post2')
   }
 ];
 
@@ -160,4 +188,8 @@ export const getMostLikedPost = async () => {
 
 export const getRecentComments = async (limit: number = 5) => {
     return comments.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).slice(0, limit);
+}
+
+export const getPostsByCategory = async (category: string) => {
+  return posts.filter(p => p.category === category).sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 }

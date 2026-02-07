@@ -2,9 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Heart } from 'lucide-react';
+import { Heart, Smile, Sparkles, Lightbulb, Heart as HeartIcon } from 'lucide-react';
 import type { Post } from '@/lib/definitions';
 import { Badge } from '@/components/ui/badge';
+
+const categoryConfig = {
+  humor: { label: 'Humor', icon: Smile, color: 'bg-blue-500/10 text-blue-600 hover:bg-blue-500/20' },
+  zanimljivosti: { label: 'Zanimljivosti', icon: Sparkles, color: 'bg-purple-500/10 text-purple-600 hover:bg-purple-500/20' },
+  ideje: { label: 'Ideje', icon: Lightbulb, color: 'bg-yellow-500/10 text-yellow-600 hover:bg-yellow-500/20' },
+  zajednica: { label: 'Zajednica', icon: HeartIcon, color: 'bg-pink-500/10 text-pink-600 hover:bg-pink-500/20' },
+};
 
 type PostCardProps = {
   post: Post;
@@ -12,6 +19,9 @@ type PostCardProps = {
 };
 
 export function PostCard({ post, priority = false }: PostCardProps) {
+  const categoryInfo = categoryConfig[post.category];
+  const CategoryIcon = categoryInfo.icon;
+
   return (
     <Card className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       <Link href={`/posts/${post.id}`} className="block group flex-grow">
@@ -26,7 +36,13 @@ export function PostCard({ post, priority = false }: PostCardProps) {
               priority={priority}
               data-ai-hint={post.imageHint}
             />
-            {post.featured && <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground">Featured</Badge>}
+            <div className="absolute top-4 right-4 flex gap-2">
+              {post.featured && <Badge className="bg-accent text-accent-foreground">Istaknuto</Badge>}
+              <Badge className={`flex items-center gap-1 ${categoryInfo.color}`}>
+                <CategoryIcon className="h-3 w-3" />
+                {categoryInfo.label}
+              </Badge>
+            </div>
           </div>
         </CardHeader>
         <CardContent className="p-6 flex-1">
@@ -47,7 +63,7 @@ export function PostCard({ post, priority = false }: PostCardProps) {
           <div>
             <p className="text-sm font-medium leading-none">{post.author.name}</p>
             <p className="text-xs text-muted-foreground">
-              {new Date(post.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              {new Date(post.createdAt).toLocaleDateString('sr-RS', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
         </div>

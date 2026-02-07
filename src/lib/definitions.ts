@@ -1,3 +1,5 @@
+export type PostCategory = 'humor' | 'zanimljivosti' | 'ideje' | 'zajednica';
+
 export type Post = {
   id: string;
   title: string;
@@ -11,6 +13,7 @@ export type Post = {
   likes: number;
   imageUrl: string;
   imageHint: string;
+  category: PostCategory;
 };
 
 export type Comment = {
