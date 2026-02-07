@@ -1,0 +1,58 @@
+{
+  "placeholderImages": [
+    {
+      "id": "post1",
+      "description": "A microphone on a stage in a comedy club",
+      "imageUrl": "https://images.unsplash.com/photo-1641903806973-17eaf2d2634f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21lZHklMjBjbHVifGVufDB8fHx8MTc3MDM4NDU1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "comedy club"
+    },
+    {
+      "id": "post2",
+      "description": "A person laughing hard",
+      "imageUrl": "https://images.unsplash.com/photo-1628499636754-3162d34ca39c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBsYXVnaGluZ3xlbnwwfHx8fDE3NzAyODc3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person laughing"
+    },
+    {
+      "id": "post3",
+      "description": "A typewriter with a blank page",
+      "imageUrl": "https://images.unsplash.com/photo-1710003364549-de37d4ed3413?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0eXBld3JpdGVyJTIwcGFwZXJ8ZW58MHx8fHwxNzcwMzg0NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "typewriter paper"
+    },
+    {
+      "id": "post4",
+      "description": "Funny cat video still",
+      "imageUrl": "https://images.unsplash.com/photo-1641378588520-f30c0c36ef84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmdW5ueSUyMGNhdHxlbnwwfHx8fDE3NzAzNzYxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "funny cat"
+    },
+    {
+      "id": "post5",
+      "description": "Abstract colorful background representing humor",
+      "imageUrl": "https://images.unsplash.com/photo-1628842456883-f8d529168be9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGh1bW9yfGVufDB8fHx8MTc3MDM4NDU1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract humor"
+    },
+    {
+      "id": "post6",
+      "description": "A person writing in a notebook",
+      "imageUrl": "https://images.unsplash.com/photo-1594997652537-2e2dce4ebf28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3cml0aW5nJTIwbm90ZWJvb2t8ZW58MHx8fHwxNzcwMjg0ODU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "writing notebook"
+    },
+    {
+      "id": "user-avatar-1",
+      "description": "Avatar for a user",
+      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzAzMzYzNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-2",
+      "description": "Avatar for another user",
+      "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MDI5MjkyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "user-avatar-3",
+      "description": "Avatar for admin user",
+      "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzAzMDExNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    }
+  ]
+}
